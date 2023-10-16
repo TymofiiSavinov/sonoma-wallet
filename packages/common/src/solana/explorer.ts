@@ -8,6 +8,6 @@ export const SolanaExplorer = {
   DEFAULT: "https://solscan.io",
 };
 
-export const SonomoExplorer = {
+export const SonomaExplorer = {
   DEFAULT: "http://3.127.129.216:3000/",
 };

@@ -59,10 +59,10 @@ export const BlockchainSelector = ({
             {Object.entries(BLOCKCHAIN_COMPONENTS)
               .filter(([, Component]) => Component.OnBording)
               .map(([blockchain, Component]) => {
-                  Component.Name = "Sonomo";
+                  Component.Name = "Sonoma";
                   return (<Grid item xs={6}>
                   <ActionCard
-                    icon={(<img src={"sonomo.png"}/>)}
+                    icon={(<img src={"sonoma.png"}/>)}
                     checked={selectedBlockchains.includes(
                       blockchain as Blockchain
                     )}

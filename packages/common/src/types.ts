@@ -44,7 +44,7 @@ export type RpcResponseData = {
 export enum Blockchain {
   // SVM.
   SOLANA = "solana",
-  SONOMO = "sonomo",
+  SONOMA = "sonoma",
   ECLIPSE = "eclipse",
 
   // EVM.

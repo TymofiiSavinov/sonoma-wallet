@@ -8,7 +8,7 @@ import {
   CHANNEL_SOLANA_NOTIFICATION,
   CHANNEL_SOLANA_RPC_REQUEST,
   CHANNEL_SOLANA_RPC_RESPONSE,
-  DEFAULT_SOLANA_CLUSTER, DEFAULT_SONOMO_CLUSTER,
+  DEFAULT_SOLANA_CLUSTER, DEFAULT_SONOMA_CLUSTER,
   getLogger,
   InjectedRequestManager,
   NOTIFICATION_ACTIVE_WALLET_UPDATED,
@@ -121,7 +121,7 @@ export class ProviderSolanaInjection
   defaultConnection(): Connection {
     return new Connection(
       // check rollup.config.ts for this env var
-      process.env.DEFAULT_SONOMO_CONNECTION_URL || DEFAULT_SONOMO_CLUSTER
+      process.env.DEFAULT_SONOMA_CONNECTION_URL || DEFAULT_SONOMA_CLUSTER
     );
   }
 

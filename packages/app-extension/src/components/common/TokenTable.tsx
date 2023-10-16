@@ -328,7 +328,7 @@ function TokenRow({
   token: Token;
   style?: any;
 }) {
-  let subtitle = "sonomo";
+  let subtitle = "sonoma";
   if (token.displayBalance) {
     subtitle = `${token.displayBalance.toLocaleString()} ${subtitle}`;
   }
@@ -336,7 +336,7 @@ function TokenRow({
     <BalancesTableRow onClick={() => onClick(token)} style={style}>
       <BalancesTableCell
         props={{
-          icon: "sonomo.png",
+          icon: "sonoma.png",
           title: "SON",
             subtitle,
           usdValue: token.usdBalance,

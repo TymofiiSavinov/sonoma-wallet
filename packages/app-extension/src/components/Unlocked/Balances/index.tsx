@@ -30,7 +30,7 @@ export function Balances() {
     publicKey: string
   ) => {
     push({
-      title: `Sonomo / SON`,
+      title: `Sonoma / SON`,
       componentId: NAV_COMPONENT_TOKEN,
       componentProps: {
         blockchain,

@@ -2,14 +2,14 @@
 
   <img src="/assets/backpack.png" />
 
-  <h1>Backpack Sonomo wallet</h1>
+  <h1>Backpack Sonoma wallet</h1>
 
 </div> 
 
 
 ## Installing the Latest Release
-Install latest Sonomo client and then:
-set Sonomo claster
+Install latest Sonoma client and then:
+set Sonoma claster
 ```bash
 sonomo config set --url http://3.74.241.65:8899/
 ```

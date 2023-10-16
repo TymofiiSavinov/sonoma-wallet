@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import {
   Blockchain,
-  SolanaCluster, SonomoCluster,
+  SolanaCluster, SonomaCluster,
   UI_RPC_METHOD_CONNECTION_URL_UPDATE,
 } from "@coral-xyz/common";
 import { PushDetail } from "@coral-xyz/react-common";
@@ -23,8 +23,8 @@ export function PreferencesSolanaConnection() {
 
   const menuItems = {
     "Testnet (Beta)": {
-      onClick: () => changeNetwork(SonomoCluster.TESTNET),
-      detail: currentUrl === SonomoCluster.TESTNET ? <Checkmark /> : null,
+      onClick: () => changeNetwork(SonomaCluster.TESTNET),
+      detail: currentUrl === SonomaCluster.TESTNET ? <Checkmark /> : null,
     }
   };
 

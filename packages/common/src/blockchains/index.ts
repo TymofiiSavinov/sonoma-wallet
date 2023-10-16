@@ -3,8 +3,8 @@ import { ethers } from "ethers";
 
 import { EthereumConnectionUrl } from "../ethereum/connection-url";
 import { EthereumExplorer } from "../ethereum/explorer";
-import {SolanaCluster, SonomoCluster} from "../solana/cluster";
-import {SolanaExplorer, SonomoExplorer} from "../solana/explorer";
+import {SolanaCluster, SonomaCluster} from "../solana/cluster";
+import {SolanaExplorer, SonomaExplorer} from "../solana/explorer";
 import type { EclipseData, EthereumData, SolanaData } from "../types";
 import { Blockchain } from "../types";
 
@@ -35,10 +35,10 @@ export const BLOCKCHAIN_COMMON: Record<
       "https://s3.us-east-1.amazonaws.com/app-assets.xnfts.dev/images/useBlockchainLogo/ethereum.png",
     bip44CoinType: 60,
   },
-  [Blockchain.SONOMO]: {
+  [Blockchain.SONOMA]: {
     PreferencesDefault: {
-      explorer: SonomoExplorer.DEFAULT,
-      cluster: SonomoCluster.DEFAULT,
+      explorer: SonomaExplorer.DEFAULT,
+      cluster: SonomaCluster.DEFAULT,
       commitment: "confirmed",
     },
     validatePublicKey: (address: string) => {
@@ -50,17 +50,13 @@ export const BLOCKCHAIN_COMMON: Record<
       return true;
     },
     logoUri:
-      "/sonomo.png",
+      "/sonoma.png",
     bip44CoinType: 501,
   },
-  // Blockchain.SOLANA will be by default
-  // explorer: SonomoExplorer.DEFAULT,
-  // cluster: SonomoCluster.DEFAULT,
-  //  logoUri: "/sonomo.png",
   [Blockchain.SOLANA]: {
     PreferencesDefault: {
-      explorer: SonomoExplorer.DEFAULT,
-      cluster: SonomoCluster.DEFAULT,
+      explorer: SonomaExplorer.DEFAULT,
+      cluster: SonomaCluster.DEFAULT,
       commitment: "confirmed",
     },
     validatePublicKey: (address: string) => {
@@ -72,7 +68,7 @@ export const BLOCKCHAIN_COMMON: Record<
       return true;
     },
     logoUri:
-        "/sonomo.png",
+        "/sonoma.png",
     bip44CoinType: 501,
   },
   [Blockchain.ECLIPSE]: {

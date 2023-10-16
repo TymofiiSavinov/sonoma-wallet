@@ -26,7 +26,7 @@ export const TokenAmountHeader: React.FC<{
       ? formattedAmount.slice(0, maxChars) + "..."
       : formattedAmount;
 
-  const logo = "/sonomo.png";
+  const logo = "/sonoma.png";
   return (
     <div
       style={{

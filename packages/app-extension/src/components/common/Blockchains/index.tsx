@@ -2,7 +2,7 @@ import type { EthereumContext } from "@coral-xyz/common";
 import {
   Blockchain,
   DEFAULT_SOLANA_CLUSTER,
-  DEFAULT_SONOMO_CLUSTER,
+  DEFAULT_SONOMA_CLUSTER,
   ETH_NATIVE_MINT,
   EthereumConnectionUrl,
   ethereumIndexed,
@@ -279,9 +279,6 @@ export const BLOCKCHAIN_COMPONENTS: Record<
         title: "SOL",
         icon: SOL_LOGO_URI,
         subtitle: "Solana",
-       // title: "SON",
-        //icon: "/sonomo.png",
-        //subtitle: "Sonomo",
       },
     ],
     DerivationPathOptions: [
@@ -316,7 +313,7 @@ export const BLOCKCHAIN_COMPONENTS: Record<
     LoadBalances: async (publicKeys: string[]) => {
       // TODO use Backpack configured value
       const solanaMainnetRpc =
-        process.env.DEFAULT_SONOMO_CONNECTION_URL || DEFAULT_SONOMO_CLUSTER;
+        process.env.DEFAULT_SONOMA_CONNECTION_URL || DEFAULT_SONOMA_CLUSTER;
       const solanaConnection = new SolanaConnection(
         solanaMainnetRpc,
         "confirmed"
@@ -418,13 +415,13 @@ export const BLOCKCHAIN_COMPONENTS: Record<
       );
     },
   },
-  [Blockchain.SONOMO]: {
+  [Blockchain.SONOMA]: {
     Enabled: true,
     OnBording: false,
-    Name: "Sonomo",
+    Name: "Sonoma",
     GasTokenName: "SON",
     AppTokenName: "SPL",
-    LedgerText: "Open the Sonomo app",
+    LedgerText: "Open the Sonoma app",
     LedgerApp: (transport: Transport) => new Solana(transport),
     PublicKeyFromPath: async (ledgerWallet: LedgerApp, path: string) => {
       const ledgerAddress = (
@@ -437,8 +434,8 @@ export const BLOCKCHAIN_COMPONENTS: Record<
     RampSupportedTokens: [
       {
         title: "SON",
-        icon: "/sonomo.png",
-        subtitle: "Sonomo",
+        icon: "/sonoma.png",
+        subtitle: "Sonoma",
       },
     ],
     DerivationPathOptions: [
@@ -473,7 +470,7 @@ export const BLOCKCHAIN_COMPONENTS: Record<
     LoadBalances: async (publicKeys: string[]) => {
       // TODO use Backpack configured value
       const solanaMainnetRpc =
-          process.env.DEFAULT_SONOMO_CONNECTION_URL || DEFAULT_SONOMO_CLUSTER;
+          process.env.DEFAULT_SONOMA_CONNECTION_URL || DEFAULT_SONOMA_CLUSTER;
       const solanaConnection = new SolanaConnection(
           solanaMainnetRpc,
           "confirmed"

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import {
   Blockchain,
-  SolanaExplorer, SonomoExplorer,
+  SolanaExplorer, SonomaExplorer,
   UI_RPC_METHOD_EXPLORER_UPDATE,
 } from "@coral-xyz/common";
 import { useBackgroundClient, useSolanaExplorer } from "@coral-xyz/recoil";
@@ -21,10 +21,10 @@ export function PreferencesSolanaExplorer() {
   }, [nav]);
 
   const menuItems = {
-    "Sonomo Explorer": {
-      onClick: () => changeExplorer(SonomoExplorer.DEFAULT),
+    "Sonoma Explorer": {
+      onClick: () => changeExplorer(SonomaExplorer.DEFAULT),
       detail:
-        explorer === SonomoExplorer.DEFAULT ? <Checkmark /> : <div />,
+        explorer === SonomaExplorer.DEFAULT ? <Checkmark /> : <div />,
     },
   };
 

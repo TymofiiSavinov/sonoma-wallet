@@ -164,7 +164,7 @@ function WalletButton({
             {" "}
             <ProxyImage
               noSkeleton
-              src={"sonomo.png"}
+              src={"sonoma.png"}
               style={{
                 width: "15px",
               }}
@@ -1072,7 +1072,7 @@ function NetworkIcon({
   style?: React.CSSProperties;
 }) {
   const blockchainLogo = getBlockchainLogo(blockchain);
-  return <img src={"sonomo.png"} style={style} />;
+  return <img src={"sonoma.png"} style={style} />;
 }
 
 type WalletDrawerContext = {

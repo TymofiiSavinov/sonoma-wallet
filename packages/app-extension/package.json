@@ -2,7 +2,7 @@
   "private": true,
   "name": "@coral-xyz/app-extension",
   "version": "0.1",
-  "description": "Sonomo wallet",
+  "description": "Sonoma wallet",
   "bundlewatch": {
     "files": [
       {

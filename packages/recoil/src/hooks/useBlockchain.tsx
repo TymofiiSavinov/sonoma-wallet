@@ -52,8 +52,8 @@ export function getBlockchainLogo(blockchain: Blockchain): string {
       return "./ethereum.png";
     case Blockchain.SOLANA:
       return "/solana.png";
-    case Blockchain.SONOMO:
-      return "/sonomo.png";
+    case Blockchain.SONOMA:
+      return "/sonoma.png";
     case Blockchain.ECLIPSE:
       return "/eclipse.png"; // TODO
     default:

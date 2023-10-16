@@ -137,10 +137,10 @@ export function Preferences() {
   }
 
   const blockchainMenuItems: any = {
-    Sonomo: {
+    Sonoma: {
       onClick: () => nav.push("preferences-solana"),
       icon: () => {
-        const blockchainLogo = getBlockchainLogo(Blockchain.SONOMO);
+        const blockchainLogo = getBlockchainLogo(Blockchain.SONOMA);
         return (
           <img
             src={blockchainLogo}
