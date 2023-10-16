@@ -22,8 +22,8 @@ sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev l
 
 ### Pull the code
 ```bash
-git clone https://github.com/TymofiiSavinov/sonomo-wallet.git
-cd sonomo-wallet
+git clone https://github.com/TymofiiSavinov/sonoma-wallet.git
+cd sonoma-wallet
 ```
 
 #### Environment variables
