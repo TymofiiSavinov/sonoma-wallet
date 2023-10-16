@@ -11,7 +11,7 @@
 Install latest Sonoma client and then:
 set Sonoma claster
 ```bash
-sonomo config set --url http://3.74.241.65:8899/
+sonoma config set --url http://3.74.241.65:8899/
 ```
 
 ## Requirements
