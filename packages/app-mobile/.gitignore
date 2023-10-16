@@ -1,0 +1,16 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+__generated__
+
+# macOS
+.DS_Store
+pc-api-5721708238141063241-142-55a8edd32401.json

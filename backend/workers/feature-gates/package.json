@@ -1,0 +1,19 @@
+{
+  "name": "feature-gates",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.16.0",
+    "@coral-xyz/common": "*",
+    "typescript": "^4.9.5",
+    "wrangler": "^2.1.6"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --local -e development",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "hono": "^3.1.5",
+    "jose": "^4.14.4"
+  }
+}

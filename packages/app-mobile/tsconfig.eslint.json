@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "types": ["@types/node"],
+    "noEmit": true,
+    "allowJs": true
+  },
+  "extends": "./tsconfig.json",
+  "include": [
+    ".eslintrc.js",
+    "app.config.ts",
+    "metro.config.js",
+    "babel.config.js",
+    "jest.config.base.js",
+    "jest.config.js",
+    "jest.preset.js",
+    "tamagui.config.ts"
+  ]
+}
