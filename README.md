@@ -9,9 +9,9 @@
 
 ## Installing the Latest Release
 Install latest Sonoma client and then:
-set Sonoma claster
+set Sonoma cluster
 ```bash
-sonoma config set --url http://3.74.241.65:8899/
+sonoma config set --url https://api.testnet.sonomachain.com
 ```
 
 ## Requirements
